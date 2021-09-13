@@ -24,10 +24,28 @@ from django.test import TestCase
 # num = li.sort()
 # print(li)
 
-class t(object):
-    a = 1
+# class Solution(object):
+# #     def twoSum(self, nums, target):
+# #         li2 = []
+# #         for i in range(len(nums)):
+# #             for j in range(i + 1, len(nums)):
+# #                 if nums[i] == nums[j]:
+# #                     li2 = [i for i in range(len(nums)) if nums[i] + nums[j] == target]
+# #                 elif nums[i] + nums[j] == target:
+# #                     li2.append(nums.index(nums[i]))
+# #                     li2.append(nums.index(nums[j]))
+# #         return li2
+# #
+# #
+# # nums = [2, 5, 5, 11]
+# # target = 10
+# # s = Solution()
+# # print(s.twoSum(nums, target))
 
-    def t(self):
-        hum = 90
-te = t()
-print(te.t())
+class Solution(object):
+    def reverse(self, num):
+        pass
+
+
+s = Solution()
+print(s.reverse(123))
