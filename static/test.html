@@ -345,6 +345,29 @@
 
     </div>
 </div>
+<div class="time">
+    <script>
+        var num = 3, i = 0;
+        var Time = window.setInterval(function () {
+            console.log(num)
+            num -= 1
+            if(num === 0){
+               var time = document.getElementById("time")
+                time.innerText = '上课时间到了'
+                clearInterval(Time);
+            }
+            else {
+                var time2 = document.getElementById("time")
+                time2.innerText = num
+            }
+        }, 1000)
+        var data = new Date();
+        console.log(data.getMonth());
+        console.log(data.getHours());
+    </script>
+</div>
+<div id="time">
 
+</div>
 </body>
 </html>
