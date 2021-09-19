@@ -63,3 +63,20 @@
 # #     print("这是正确的！！！")
 # # else:
 # #     print("错误")
+#
+class Test(object):
+    SUCCESS = 1, '成功'
+    DEFAULT = 403, 'ERROR'
+    names = ''
+
+    def __init__(self, status='SUCCESS'):
+        if hasattr(self, status):
+            self.data = 2
+            self.name, self.age = getattr(self, status)
+
+    def rtn(self, data):
+        return self.name, self.data
+
+
+t = Test()
+print(t.rtn('qqdatta'))
